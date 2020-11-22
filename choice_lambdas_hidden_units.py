@@ -1,6 +1,11 @@
 """
-Description: This script has been used for choosing a range of values for the lambdas and the number of hidden units.
-             Moreover, it also computes the number of classes (low, medium and high concret) that the dataset has after the whole preprocessing process.
+This script visualizes effect of different lambdas and hidden units.
+Moreover, it also computes the number of classes (low, medium and high concret) that the dataset has 
+after the whole preprocessing process.
+
+Usage: adjust the inputs, run the script
+Input: optimal hyperparameters for the models and CV parameters
+Output: hyperparameters plots
 
 Authors: Vice Roncevic - s190075, Carlos Ribera - S192340
 Created: 13.11.2020

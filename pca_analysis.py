@@ -1,11 +1,9 @@
 """
 PCA analysis
 
-Usage: Update working directory and chose the config file with the data set. Define the input vectors
-from the variables available in the config file.
+Usage: Update working directory and chose the config file with the data set or just use separate functions. 
 Number of classes in the compared data sets must be the same!
-Input: config py file and input matrices.
-       PCA analysis and output parameters: threshold and pcUsed
+Input: see separate functions
 Output: PCA plots and output matrices
         
 
@@ -21,9 +19,9 @@ import numpy as np
 
 """
 # -------------------------------------------------------
-# Standard import header that determines the dataset to plot - comment in or out.
+# Standard import header that determines the dataset to plot - 
+# Created for convenience, commen in as neccessay
 # Take care that the order of imports and variable definition is in place!
-# Created for convenience 
 
 # Import 1. dataset - D1
 # Define input and output matrices that are to be used for plots
@@ -44,7 +42,11 @@ yIn_classSecond = y_class
 def pca_compute(xInFirst, xInSecond, threshold, pcUsed):
     
     """
-    Do a general PCA analysis for 2 datasets. 
+    General PCA analysis for 2 datasets. 
+    Input: xInFirst - first data set
+           xInSecond - second data set
+           thershold - variance explaine threshold
+           pcUsed - used principal components for the plot
     Output: computed PCs, projected data, variance explained and component load.
     """
     

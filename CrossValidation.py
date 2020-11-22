@@ -1,11 +1,13 @@
 """
-Cross-Validation
+This computes the output of 2-layer Cross Validation for different LRM or classification models. 
+It is based on algorithm 6, see 02450 course book. It also handles hyperparameters optimization and CV output
+relevant for statistical evaluation. Because of tehnical issues, the model that are being compared are needed 
+to be created inside the CV loops.
 
-Description: This script performs Two level cross-validation for model selection and performace evaluation 
-             (based on algorithm 6, lecture notes)
-
-             - twoLevelCV_regression() function -> Compares the three regression models using two level Cross-Validation
-             - twoLevelCV_classification() function -> Compares the three classification models using two level Cross-Validation
+Usage: import the script. Use twoLevelCV_regression() to compare 3 LRM using 2-layer CV. 
+       Use twoLevelCV_classification to compare 3 classification models using 2-layer CV.
+Input: see specific functions - INPUT THE PARAMETERS OF THE MODELS THAT ARE TO BE COMPARED!
+Output: 2-layer CV data output for comparison and statistical evaluation
 
 Authors: Vice Roncevic - s190075, Carlos Ribera - S192340
 Created: 07.11.2020

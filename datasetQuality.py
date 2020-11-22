@@ -3,7 +3,7 @@ Data set quality assessment - basic visualization and observations
 
 Usage: Update working directory and chose the config file with the data set. Define the input vectors
 from the variables available in the config file.
-Input: config py file and input matrices
+Input: config file and input matrices
 Output: Various plots
 
 Authors: Vice Roncevic - s190075, Carlos Ribera - S192340, Mu Zhou - s202718

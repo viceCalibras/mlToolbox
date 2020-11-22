@@ -1,8 +1,9 @@
 """
 Statistical evaluation for Regression problem 
-
-Description: This script is using the two layer CV output to perform statistical performance evaluation of the three regression models.
-             MODELS: Regularized Linear Regression, ANN Regression, Baseline
+             
+Usage: make sure that the right models are being compared by the CrossValidation.py and run the script
+Input: optimal hyperparameters for the models, CV parameters and correlated t-test parameters
+Output: statistical output - p values and confidence intervals
 
 Authors: Vice Roncevic - s190075, Carlos Ribera - S192340
 Created: 10.11.2020
@@ -15,9 +16,7 @@ from concNoZero_config import *
 import scipy.stats as st
 
 def correlated_ttest(r, rho, alpha=0.05):
-    """
-    made by .....
-    """
+    
     rhat = np.mean(r)
     shat = np.std(r)
     J = len(r)

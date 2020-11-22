@@ -1,7 +1,11 @@
 """
-Description: This script has the functions used to optain the optimal number of hidden units for:
-                - ANN regression: annr_validate() function
-                - ANN classification: ann_multiclass_validate() function
+Script with relevant Artificial Neural Network functions.
+
+Usage: import the script. See train_neural_net to tune the network and it's training. 
+       Use annr_validate and ann_multiclass_validate functions to observe the output for the two types of 
+       networks in terms of errors and hyperparameters.
+Input: see specific functions
+Output: hyperparameters and testing errors
 
 Authors: Vice Roncevic - s190075, Carlos Ribera - S192340
 Created: 08.11.2020
@@ -132,6 +136,7 @@ def ann_multiclass_validate(xIn, yIn, C, hidden_units, K, n_replicates, max_iter
 
 
 def train_neural_net(model, loss_fn, X, y, n_replicates=3, max_iter = 10000, tolerance=1e-6):
+    
     """
     Args:
         model:          A function handle to make a torch.nn.Sequential.
@@ -155,6 +160,7 @@ def train_neural_net(model, loss_fn, X, y, n_replicates=3, max_iter = 10000, tol
             learning_curve: A list containing the learning curve of the best net.
     
     """
+    
     import torch
     # Specify maximum number of iterations for training
     logging_frequency = 2000 # display the loss every 1000th iteration

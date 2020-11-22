@@ -1,7 +1,9 @@
 """
 Feature Engineering
 
-Description: This script includes the functions used to compute feature transformations on the dataset
+Usage: import the script, use the functions to perform different data set transformations
+Input: see separate functions
+Output: transformed data sets
 
 Regression analysis
 Created: 30.10.2020

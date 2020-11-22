@@ -1,6 +1,11 @@
 """
-Description: This script computes and compares different feature transformations for Linear Regression problem. 
-             The model with the lowest estimated generalization error - RMSE will be used as a dataset for the rest of the project.
+This script compares the perfromance of Linear Regression Model on
+different feature transformations data sets.
+
+Usage: change the config files in the plot loop to determine which data set is to be used as a base for
+       feature transformations.
+Input: see compare_models function and the plotting code below
+Output: bar char of the different LRM models RMSE
 
 Authors: Vice Roncevic - s190075, Carlos Ribera - S192340
 Created: 01.11.2020

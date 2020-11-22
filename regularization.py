@@ -1,7 +1,11 @@
 """
-Description: This script includes the functions used to regularize :
-                - The Linear Regression model: rlr_validate() function
-                - The Multinominal Logistic Regression model: regmultinominal_regression() function
+This scripts perfors CV on linear regression and classification models to find optimal regularization strength.
+It is not training the models using the optimal parameters! That is done inside CrossValidation.py
+                
+Usage: use rlr_validate to perform regularization of the linear regression model and 
+       regmultinominal_regression for the multinominal logistic regression model.
+Input: see separate functions
+Output: optimal hyperparameters for the models
 
 Authors: Vice Roncevic - s190075, Carlos Ribera - S192340
 Created: 01.11.2020
